@@ -28,3 +28,23 @@ even = arr[:,1::2]
 print("arr:\n",arr)
 print("odd array :\n",odd)
 print("even array :\n",even)
+#Stack arrays horizontally
+a = np.array([1,2,3,4,5])
+b = np.array([6,7,8,9,10])
+harray = np.hstack((a,b))
+print("Horizontal array :\n",harray)
+
+arr = np.arange(1,17).reshape(4,4)
+slice = arr[0:2,:2]
+print("Sliced array :\n",slice)
+#Replace all odd numbers in a NumPy array with -1
+arr = np.arange(1,11)
+arr[arr % 2 == 1] = -1
+print(arr)
+#Create a random 3×2 matrix and find its maximum and minimum values
+random = np.random.rand(3,2)
+min = random.min()
+max = random.max()
+print("Random 3X2 matrix:\n",random)
+print("Min value :\n",min)
+print("Max value :\n",max)
